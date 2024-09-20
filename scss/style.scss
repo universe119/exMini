@@ -1,22 +1,27 @@
 @import "reset";
 
 main {
-    width: 400px;
-    height: 200px;
-    border: 10px solid red;
+    // width: 400px;
+    // height: 200px;
+    width: 100%; // 풀스크린 적용 시
+    height: 100vh; 
+    border: 1px solid red; 
     margin: 100px auto;
     position: relative;
-    // overflow: hidden;
+    overflow: hidden; // 이미지만 보이게
 
     .panel {
-        width: 2000px;
-        height: 200px;
+        //Anime에서 margin은 퍼센트 모션 처리 불가하기 때문에 absolute에 left로 배치
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        // width: 300%; // 부모는 100% * 패널갯수
+        // height: 100%;
         display: flex;
         
         li {
-            width: 400px;
-            height: 200px;
-            background-color: lightcyan;
+            // width: 33.3333%; // 자식요소 100% / 패널갯수
+            // height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
