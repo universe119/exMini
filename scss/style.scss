@@ -1,1 +1,55 @@
 @import "reset";
+
+main {
+    width: 400px;
+    height: 200px;
+    border: 10px solid red;
+    margin: 100px auto;
+    position: relative;
+    // overflow: hidden;
+
+    .panel {
+        width: 2000px;
+        height: 200px;
+        display: flex;
+        
+        li {
+            width: 400px;
+            height: 200px;
+            background-color: lightcyan;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+
+            &:nth-of-type(1) {
+                background: aqua;
+            }
+            &:nth-of-type(2) {
+                background: lightgreen;
+            }
+            &:nth-of-type(3) {
+                background: hotpink;
+            }
+            &:nth-of-type(4) {
+                background: orange;
+            }
+            &:nth-of-type(5) {
+                background: violet;
+            }
+        }
+    }
+    .btns {
+        width: 100%;
+        position: absolute;
+        bottom: 20px;
+        left: 0px;
+        display: flex;
+        justify-content: space-evenly;
+
+        li {
+            cursor: pointer;
+        }
+
+    }
+}
