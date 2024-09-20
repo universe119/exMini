@@ -29,7 +29,7 @@ btns.forEach((btn, idx) => {
 	btn.addEventListener("click", () => {
 		console.log(idx);
 
-		new Anime(panel, { left: -100 * idx + "%" }, { duration: 500 });
+		new Anime(panel, { left: -100 * idx + "%" }, { duration: 1000 });
 		// panel.style.marginLeft = -400 * idx + "px";
 
 		// 버튼 클릭시마다 순간적으로 모든 버튼을 반복돌며 on을 제거
@@ -43,7 +43,7 @@ btns.forEach((btn, idx) => {
 
 // 미션2 - HTML에서 li의 갯수만 수정하면 scss에서 일일이 panel, li의 넓이를 수정할 필요가 없도록 스크립트에서 동적 처리.(4시 40분까지)
 
-/*
+/* 마지막 버튼 on할때 설명
 특정 요소만 활성화 시키는 로직
 	- 순간적으로 모든 그룹요소를 비활성화 처리
 	- 그 직후 원하는 요소만 활성화 처리
