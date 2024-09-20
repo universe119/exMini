@@ -54,6 +54,10 @@ main {
 
         li {
             cursor: pointer;
+
+            &.on {
+                color: red;
+            }
         }
 
     }
